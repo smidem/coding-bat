@@ -1,4 +1,2 @@
 def front_back(str):
-  if (len(str) > 1):
-    str = str[-1] + str[1:len(str) - 1] + str[0]
-  return str
+    return str[-1] + str[1:len(str) - 1] + str[0] if len(str) > 1 else str

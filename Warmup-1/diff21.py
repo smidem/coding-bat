@@ -1,5 +1,2 @@
 def diff21(n):
-  diff = abs(n - 21)
-  if (n > 21):
-    diff *= 2
-  return diff
+    return abs(n - 21) * 2 if n > 21 else abs(n - 21)
