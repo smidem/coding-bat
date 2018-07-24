@@ -1,3 +1,2 @@
 def make_tags(tag, word):
-    tag = "<" + tag + ">" + word + "</" + tag + ">"
-    return tag
+    return "<" + tag + ">" + word + "</" + tag + ">"

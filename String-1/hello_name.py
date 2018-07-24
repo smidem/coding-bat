@@ -1,3 +1,2 @@
 def hello_name(name):
-    hello = "Hello " + name + "!"
-    return hello
+    return "Hello " + name + "!"
