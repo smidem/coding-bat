@@ -1,16 +1,12 @@
 import re
 
 
-def count_code(str):
-    count = 0
-    for i in range(0, len(str) - 3):
-        if str[i:i+2] == 'co' and str[i+3] == 'e':
-            count += 1
-    return count
+def count_code(s):
+    return sum([1 for i in range(len(s)-3) if s[i:i+2]=='co' and s[i+3]=='e'])
 
 
-def count_code2(str):
-    return len(re.findall(r'co.e', str))
+def count_code2(s):
+    return len(re.findall(r'co.e', s))
 
 
 print(count_code('codexxcode'))

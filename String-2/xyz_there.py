@@ -1,11 +1,9 @@
 def xyz_there(str):
-    for i in range(len(str)):
-        if str[i] != '.' and 'xyz' in str[i+1:i+4]:
-            return True
-        if str[0:3] == 'xyz':
-            return True
-    return False
+    return str.count('xyz') != str.count('.xyz')
 
 
 print(xyz_there('1.xyz.xyz2.xyz'))
 print(xyz_there('xyz'))
+print(xyz_there('abcxyz'))
+print(xyz_there('abc.xyz'))
+print(xyz_there('xyz.abc'))
